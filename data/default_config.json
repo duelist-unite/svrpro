@@ -18,8 +18,8 @@
     "auto_death": false
   },
   "modules": {
-    "welcome": "MyCard YGOPro Server",
-    "update": "请更新游戏版本",
+    "welcome": "wSedlacek's YGOPro Server",
+    "update": "Please update the client",
     "stop": false,
     "side_timeout": false,
     "tag_duel_surrender": true,
@@ -105,7 +105,7 @@
       "enable_halfway_watch": true
     },
     "windbot": {
-      "enabled": false,
+      "enabled": true,
       "botlist": "./windbot/bots.json",
       "spawn": false,
       "port": 2399,

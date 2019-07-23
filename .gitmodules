@@ -1,0 +1,6 @@
+[submodule "ygopro"]
+	path = ygopro
+	url = https://github.com/wSedlacek/ygopro
+[submodule "windbot"]
+	path = windbot
+	url = https://github.com/szefo09/windbot

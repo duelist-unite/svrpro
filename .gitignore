@@ -25,6 +25,9 @@ ygopro-2pick
 /challonge
 /logs
 
+/update
+/target
+
 test*
 *.heapsnapshot
 *.tmp
