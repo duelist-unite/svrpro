@@ -1,9 +1,10 @@
 #!/bin/bash
-echo "Compiling YGOPro Core..."
+echo "Compiling Windbot..."
+cd windbot
 ./compile.sh
 cd ..
 
-echo "Compiling Windbot..."
-cd windbot
+echo "Compiling YGOPro Core..."
+cd ygopro
 ./compile.sh
 cd ..
