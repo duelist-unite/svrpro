@@ -1,7 +1,7 @@
-pm2 stop all
+#pm2 stop all
 
-cd update
+cd ygopro/update
 ./updatecards.sh
-cd ..
+cd ../..
 
-pm2 start all
+pm2 restart all
