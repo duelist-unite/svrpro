@@ -59,7 +59,7 @@
       }
     },
     "tips": {
-      "enabled": true,
+      "enabled": false,
       "split_zh": false,
       "get": false,
       "get_zh": false
