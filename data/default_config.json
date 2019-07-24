@@ -27,7 +27,7 @@
     "hide_name": false,
     "i18n": {
       "auto_pick": false,
-      "default": "zh-cn",
+      "default": "en-us",
       "fallback": "en-us",
       "map": {
         "CN": "zh-cn",
@@ -61,7 +61,7 @@
     "tips": {
       "enabled": true,
       "split_zh": false,
-      "get": false,
+      "get": "https://purerosefallen.github.io/ygopro-tips/tips.json",
       "get_zh": false
     },
     "dialogues": {
@@ -96,7 +96,7 @@
       "hang_timeout": 90
     },
     "cloud_replay": {
-      "enabled": false,
+      "enabled": true,
       "redis": {
         "host": "127.0.0.1",
         "port": 6379
@@ -113,7 +113,7 @@
       "my_ip": "127.0.0.1"
     },
     "chat_color": {
-      "enabled": false,
+      "enabled": true,
       "restrict_to_vip": false
     },
     "retry_handle": {
@@ -124,7 +124,7 @@
       "enabled": true,
       "auto_surrender_after_disconnect": false,
       "allow_kick_reconnect": true,
-      "wait_time": 90000
+      "wait_time": 180000
     },
     "heartbeat_detection": {
       "enabled": false,
