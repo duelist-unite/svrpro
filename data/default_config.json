@@ -21,12 +21,12 @@
     "welcome": "wSedlacek's YGOPro Server",
     "update": "Please update the client",
     "stop": false,
-    "side_timeout": false,
+    "side_timeout": 3,
     "tag_duel_surrender": true,
     "replay_delay": false,
     "hide_name": false,
     "i18n": {
-      "auto_pick": false,
+      "auto_pick": true,
       "default": "en-us",
       "fallback": "en-us",
       "map": {
@@ -59,15 +59,15 @@
       }
     },
     "tips": {
-      "enabled": false,
+      "enabled": true,
       "split_zh": false,
-      "get": "https://purerosefallen.github.io/ygopro-tips/tips.json",
+      "get": false",
       "get_zh": false
     },
     "dialogues": {
-      "enabled": false,
-      "get_custom": "http://purerosefallen.github.io/ygopro-tips/dialogues-222.json",
-      "get": "http://mercury233.me/ygosrv233/dialogues.json"
+      "enabled": true,
+      "get_custom": false,
+      "get": false
     },
     "words": {
       "enabled": true,
@@ -249,10 +249,24 @@
       "port": 7966,
       "password": "123456",
       "hooks": {
+        "windbot": {
+          "path": "./windbot/",
+          "remote": "origin",
+          "branch": "master",
+          "forced": true,
+          "callback": {
+            "command": "xbuild",
+            "args": [
+              "/property:Configuration=Release",
+              "/property:TargetFrameworkVersion=v4.5"
+            ],
+            "path": "./windbot/"
+          }
+        },
         "ygopro": {
           "path": "./ygopro/",
           "remote": "origin",
-          "branch": "server",
+          "branch": "master",
           "forced": false,
           "callback": {
             "command": "bash",
