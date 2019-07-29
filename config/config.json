@@ -18,7 +18,7 @@
     "auto_death": false
   },
   "modules": {
-    "welcome": "wSedlacek's YGOPro Server",
+    "welcome": "wSedlacek's YGOPro Server\nWant to show your appreciation for service?\nDonate at https://donate.wsedlacek.com",
     "update": "Please update the client",
     "stop": false,
     "side_timeout": 3,
