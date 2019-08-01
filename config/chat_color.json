@@ -2,6 +2,10 @@
   "file": "./config/chat_color.json",
   "save_list": {
     "::ffff:114.125.85.21:Tinez": "GREEN",
-    "::ffff:114.125.69.9:Tinez": "YELLOW"
+    "::ffff:114.125.69.9:Tinez": "YELLOW",
+    "::ffff:140.213.6.63:Ryūzaki": "YELLOW",
+    "::ffff:114.122.136.119:Tinez": "GREEN",
+    "::ffff:114.125.77.194:Avram Strife": "RED",
+    "::ffff:115.178.251.170:Darkside's": "RED"
   }
 }

@@ -1,6 +1,7 @@
-[submodule "ygopro"]
-	path = ygopro
-	url = https://github.com/wSedlacek/ygopro
+
 [submodule "windbot"]
 	path = windbot
-	url = https://github.com/szefo09/windbot
+	url = https://gitlab.com/duelists-unite/windbot.git
+[submodule "ygopro"]
+	path = ygopro
+	url = https://gitlab.com/duelists-unite/ygopro.git
