@@ -26,7 +26,7 @@
     "replay_delay": false,
     "hide_name": false,
     "i18n": {
-      "auto_pick": true,
+      "auto_pick": false,
       "default": "en-us",
       "fallback": "en-us",
       "map": {
