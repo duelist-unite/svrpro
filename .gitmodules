@@ -1,7 +1,8 @@
-
 [submodule "windbot"]
 	path = windbot
 	url = https://gitlab.com/duelists-unite/windbot.git
+        branch = stable 
 [submodule "ygopro"]
 	path = ygopro
 	url = https://gitlab.com/duelists-unite/ygopro.git
+        branch = stable 
