@@ -5,7 +5,7 @@ curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get install -y curl git build-essential libreadline-dev libsqlite3-dev mono-complete nodejs premake4 libevent-dev tzdata
-sudo npm install pm2 -g
+npm install pm2 -g
 
 # mkdir lib
 # cd lib
