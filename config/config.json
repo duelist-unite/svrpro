@@ -91,7 +91,7 @@
       "hang_timeout": 90
     },
     "cloud_replay": {
-      "enabled": true,
+      "enabled": false,
       "redis": {
         "host": "127.0.0.1",
         "port": 6379
