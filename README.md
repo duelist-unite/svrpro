@@ -26,7 +26,7 @@
 ```bash
 # Navigate to install directory (server folder will be created in this path)
 cd ~/
-source <(curl -s https://gitlab.com/duelists-unite/svrpro/raw/master/install.sh)
+source <(curl -s https://gitlab.com/duelists-unite/srvpro/raw/master/install.sh)
 ```
   * If you wish to use the Torrenment Mode, it is recommended to change the startup command to `pm2-docker start /ygopro-server/data/pm2-docker-tournament.js`
 

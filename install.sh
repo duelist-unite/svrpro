@@ -23,8 +23,8 @@ npm install pm2 -g
 # cd ..
 
 echo "Downloading YGOPro Server..."
-git clone https://gitlab.com/duelists-unite/svrpro.git svrpro-beta --recursive
-cd svrpro-beta
+git clone https://gitlab.com/duelists-unite/srvpro.git srvpro-beta --recursive
+cd srvpro-beta
 
 echo "Installing YGOPro Server Dependancies..."
 npm install
