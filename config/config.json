@@ -26,7 +26,7 @@
     "replay_delay": false,
     "hide_name": false,
     "i18n": {
-      "auto_pick": true,
+      "auto_pick": false,
       "default": "en-us",
       "fallback": "en-us",
       "map": {
@@ -91,7 +91,7 @@
       "hang_timeout": 90
     },
     "cloud_replay": {
-      "enabled": true,
+      "enabled": false,
       "redis": {
         "host": "127.0.0.1",
         "port": 6379
@@ -310,7 +310,7 @@
       ]
     },
     "http": {
-      "port": 7922,
+      "port": 7924,
       "websocket_roomlist": false,
       "public_roomlist": false,
       "show_ip": false,
@@ -318,7 +318,7 @@
       "quick_death_rule": 2,
       "ssl": {
         "enabled": false,
-        "port": 7923,
+        "port": 7925,
         "cert": "ssl/fullchain.pem",
         "key": "ssl/privkey.pem"
       }
