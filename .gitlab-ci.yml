@@ -23,5 +23,5 @@ update-resources-auto:
     - git submodule sync
     - git submodule update --remote
     - git add -A
-    - git commit -m "Update Submodules"
-    - git push
+    - git commit -m "Update Submodules" || true
+    - git push || true
