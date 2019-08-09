@@ -1,0 +1,27 @@
+variables:
+  DOCKER_DRIVER: overlay2
+
+stages:
+  - git-robot
+
+update-resources-auto:
+  stage: git-robot
+  only:
+    - schedules
+  before_script:
+    - 'which git || ( apt-get update -y && apt-get install git -y )'
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$GIT_SSH_PRIV_KEY")
+    - git config --global user.email "robot@duelistsunite.org"
+    - git config --global user.name "Auto Update"
+    - mkdir -p ~/.ssh
+    - ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
+  script:
+    - git clone git@gitlab.com:${CI_PROJECT_PATH}.git --recursive
+    - cd ${CI_PROJECT_NAME}
+    - git submodule sync
+    - git submodule update --remote
+    - git add -A
+    - git commit -m "Update Submodules"
+    - git push
