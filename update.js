@@ -2,7 +2,7 @@ var moment = require('moment');
 var exec = require('child_process').exec;
 var check = function () {
   var now = moment();
-  if (now.minute() == 10) {
+  if (now.minute() == 30) {
     console.log("Time to update!");
     exec('./update.sh');
     setTimeout(check, 60000);
