@@ -1,20 +1,11 @@
 #!/bin/bash
-echo WIP - DO NOT USE
-#echo "Updating YGOPro-server..."
-#git submodule update --remote
-#git remote add -f upstream https://github.com/purerosefallen/ygopro-server
-#git merge upstream/master --no-commit
+git add -A
+git reset --hard
+git pull
 
-#echo "Updating Windbot..."
-#cd windbot
-#./update.sh
-#cd ..
+git submodule foreach "git add -A && git reset --hard"
+git fetch origin && git add -A && git reset --hard && git checkout origin/master
 
-#echo "Updating YGOPro core..."
-#cd ygopro
-#./update.sh
-#cd ..
-
-#echo "Publishing Update..."
-#git commit -a -m "autoUpdate"
-#git push origin HEAD:master
+git submodule sync --recursive
+git submodule update --recursive --init
+git submodule update --recursive --remote
