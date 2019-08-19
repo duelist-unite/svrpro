@@ -1,7 +1,7 @@
 #!/bin/bash
 git add -A
 git reset --hard
-git pull
+git pull origin master
 
 git submodule foreach "git add -A && git reset --hard"
 git fetch origin && git add -A && git reset --hard && git checkout origin/master
